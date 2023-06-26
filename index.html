@@ -6,13 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/styles/globalStyles.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/cards.css" />
     <title>Open Music</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <script src="./src/scripts/theme.js"></script>
-    <script src="./src/scripts/productsData.js"></script>
-    <script src="./src/scripts/index.js"></script>
+    <header>
+      <div class="header__div">
+        <h1>Open Music</h1>
+        <button>Modo noturno</button>
+      </div>
+    </header>
+    <main id="app">
+      <div class="header__music-gender">
+        <p>Generos</p>
+        <div class="gender__filter">
+          <button value="0" class="music__all">Todos</button>
+          <button value="1" class="music__pop">Pop</button>
+          <button value="2" class="music__mpb">MPB</button>
+          <button value="3" class="music__forro">Forro</button>
+          <button value="4" class="music__samba">Samba</button>
+          <button value="5" class="music__baiao">Baiao</button>
+          <button value="6" class="music__rap">Rap</button>
+          <button value="7" class="music__hiphop">Hip-Hop</button>
+          <button value="8" class="music__rock">Rock</button>
+          <button value="9" class="music__raggea">Raggea</button>
+          <button value="10" class="music__country">Country</button>
+          <button value="11" class="music__gospel">Gospel</button>
+        </div>
+      </div>
+
+      <div class="header__music-price-filter">
+        <div>
+          <p>Definir Preco</p>
+          <p>R$ <span id="inputID">0</span></p>
+        </div>
+        <input id="inputRange" type="range" min="0" max="100" step="1" value="0">
+      </div>
+
+      <div class="header__album">
+        <p>Albuns encontrados</p>
+      </div>
+    </main>
+    <script type="module" src="./src/scripts/theme.js"></script>
+    <script type="module" src="./src/scripts/productsData.js"></script>
+    <script type="module" src="./src/scripts/index.js"></script>
   </body>
 </html>

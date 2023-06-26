@@ -1,1 +1,114 @@
 /* Desenvolva sua estilização aqui ... */
+
+    #app{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 109px;
+    }
+
+    .header__div{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        width: 70vw;
+    }
+
+    .header__div h1{
+        font-family: Inter;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 34px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .header__div button{
+        width: 70px;
+        height: 30px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        background-color: var(--color-grey-6);
+        
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .header__music-gender{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        width: 70vw;
+        margin-top: 30px;
+    }
+
+    .header__music-price-filter{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        width: 70vw;
+        margin-top: 30px;
+    }
+
+    .header__music-price-filter div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 70vw;
+    }
+
+    .header__album{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #inputRange{
+        width: 70vw;
+    }
+
+    .gender__filter{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .gender__filter button{
+        width: 70px;
+        height: 30px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        background-color: var(--color-grey-6);
+        
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
