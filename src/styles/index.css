@@ -4,6 +4,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: var(--color-white-fixed);
+
     }
     header {
         display: flex;
@@ -11,6 +13,8 @@
         align-items: center;
         width: 100vw;
         height: 109px;
+        background-color: var(--color-white-fixed);
+        color: var(--color-text);
     }
 
     .header__div{
@@ -49,6 +53,11 @@
 
     }
 
+    .button__img{
+        height: 90%;
+        width: 80%;
+    }
+
     .header__music-gender{
         display: flex;
         justify-content: space-between;
@@ -57,6 +66,7 @@
         gap: 20px;
         width: 70vw;
         margin-top: 30px;
+        color: var(--color-text2);
     }
 
     .header__music-price-filter{
@@ -75,6 +85,7 @@
         flex-direction: row;
         align-items: flex-start;
         width: 70vw;
+        color: var(--color-text2);
     }
 
     .header__album{
@@ -82,6 +93,7 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+        color: var(--color-text2);
     }
 
     #inputRange{
@@ -110,5 +122,6 @@
         font-weight: 500;
         letter-spacing: 0em;
         text-align: left;
+        color: var(--color-text2);
 
     }

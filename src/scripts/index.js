@@ -1,6 +1,33 @@
 /* Desenvolva sua lógica aqui ... */
 import { products } from "./productsData.js";
 import { categories } from "./productsData.js";
+
+/*****--------------Dark Mode--------------- */
+const renderDarkMode=()=>{
+     const darkmodebutton = document.querySelector('.button__darkMode');
+     const html = document.querySelector('html');
+     const img = document.querySelector('.button__img');
+     const theme = JSON.parse(localStorage.getItem('darkmode'));
+     if(theme){
+          html.classList.add('dark___mode');
+          img.src = "./src/assets/img/sun.png";
+     }else{
+          html.classList.remove('dark___mode');
+          img.src = "./src/assets/img/moon.png";
+     }
+
+     darkmodebutton.addEventListener('click',()=>{
+          html.classList.toggle('dark___mode');
+          if(html.classList.contains('dark___mode')){
+               img.src = "./src/assets/img/sun.png";
+               localStorage.setItem('darkmode', true);
+          }else{
+               img.src = "./src/assets/img/moon.png";
+               localStorage.setItem('darkmode', false);
+          }
+     })
+}
+/**----------------------------------------- */
 /**-----------Renderizar Albuns ------------- */
 const renderProducts = (product) => {
     const mainProducts = document.querySelector('.header__album')
@@ -197,6 +224,7 @@ const filterByRange = (products) =>{
         })
         clearScreen();
         renderProducts(filteredProducts);
+        categoryProducts(filteredProducts);
     })
 }
 /**---------------Limpa Tela------------------ */
@@ -210,3 +238,4 @@ function clearScreen(){
 renderProducts(products);
 categoryProducts(products);
 filterByRange(products);
+renderDarkMode();

@@ -26,11 +26,13 @@
         flex-direction: column;
         gap: 20px;
         padding: 10px;
+        color: var(--color-text);
     }
 
     .info__band{
         display: flex;
         justify-content: space-between;
+        color: var(--color-text2);
     }
 
     .info__buy{
@@ -47,6 +49,7 @@
         align-items: center;
         flex-wrap: nowrap;
         background-color: var(--color-grey-8);
+        color: var(--color-text2);
 
         font-family: Inter;
         font-size: 14px;
